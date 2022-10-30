@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Flappy bird</title>
+</head>
+<body>
+    <div class="wrapper">
+        <canvas id = "space-app" width = "1650" height ="500"></canvas>
+        <p class = "score">Your score: 0</p>
+    </div>
+    <div class="re-play"></div>
+    <div class="settings">
+        <img src="./img/settings.png" alt="" class = "settings-img">
+        <ul class="list-settings">
+            <li class="setting-item">
+                <h3 class="title">Character:</h3>
+                <ul class="list-details character">
+                    <li class="item">
+                        <img src="./img/bird1.png" alt="" class="item-img active">
+                    </li>
+                    <li class="item">
+                        <img src="./img/bird2.png" alt="" class="item-img">
+                    </li>
+                    <li class="item">
+                        <img src="./img/bird3.png" alt="" class="item-img">
+                    </li>
+                    <li class="item">
+                        <img src="./img/bird4.png" alt="" class="item-img">
+                    </li>
+                    <li class="item">
+                        <img src="./img/bird5.png" alt="" class="item-img">
+                    </li>
+                </ul>
+            </li>
+            <li class="setting-item">
+                <h3 class="title">Background:</h3>
+                <ul class="list-details background">
+                    <li class="item">
+                        <img src="./img/backgroud1.jpg" alt="" class="item-img">
+                    </li>
+                    <li class="item">
+                        <img src="./img/backgroud3.jpg" alt="" class="item-img">
+                    </li>
+                    <li class="item">
+                        <img src="./img/background.png" alt="" class="item-img">
+                    </li>
+                    <li class="item">
+                        <img src="./img/background2.png" alt="" class="item-img">
+                    </li>
+                </ul>
+            </li>
+            <li class="setting-item">
+                <h3 class="title">Difficulty:</h3>
+                <ul class="list-details details-dif">
+                    <li>   
+                        <input type="radio" name="dif" id="item-dif" value = "2" checked = "checked">
+                        <span class="title-dif">Easy</span>
+                    </li>
+                    <li>
+                        <input type="radio" name="dif" id="item-dif" value = "4">
+                        <span class="title-dif">Medium</span>
+                    </li>
+                   <li>
+                        <input type="radio" name="dif" id="item-dif" value = "6">
+                        <span class="title-dif">Difficult</span>
+                   </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</body>
+<script src = "./app.js"></script>
+</html>

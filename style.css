@@ -1,0 +1,104 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.score {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-size: 17px;
+    font-weight: bold;
+    color: #333;
+    border-radius: 15px;
+    padding: 10px;
+    background-color: #fff;
+}
+.re-play {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    font-size: 18px;
+    font-style: italic;
+}
+.settings {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.settings-img {
+    width: 50px;
+    height: 50px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin-left: 15px;
+}
+.settings-img.active {
+    transform: rotate(-90deg);
+}
+.list-settings {
+    list-style: none;
+    transform: translateX(-150%);
+    position: absolute;
+    top: 0;
+    left: 60px;
+    width: 400px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.5s;
+    border-radius: 10px;border: 1px solid #333;
+}
+.list-settings.active {
+    transform: translateX(5%);
+}
+.setting-item {
+
+}
+.title {
+    font-size: 19px;
+}
+.list-details {
+    display: flex;
+    list-style: none;
+}
+.item {
+    flex: 20% 0 0;
+    max-width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 7px 0px;
+    gap: 5px;
+    cursor: pointer;
+}
+.item-img {
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    object-position: center;
+}
+.item-img.active {
+    border: 1px solid #333;
+}
+.details-dif li{
+    flex: 25% 0 0;
+    max-width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.details-dif li #item-dif {
+    margin-right: 4px;
+    cursor: pointer;
+}
