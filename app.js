@@ -80,6 +80,12 @@ function playGame() {
     }
     context.drawImage(imgBird,bird.x,bird.y, 50, 50);
 function runGame() {
+    if( getScore == 5) {
+        mainImg.src = "./img/backgroud3.jpg";
+    }
+    if( getScore == 10) {
+        mainImg.src = "./img/background.png";
+    }
     document.querySelector(".re-play").innerHTML = "";
     context.drawImage(mainImg,0,0, 1650, 500);
     context.drawImage(imgBird,bird.x,bird.y, 50, 50);
